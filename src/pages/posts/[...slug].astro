@@ -7,7 +7,7 @@ import Social from '../../components/Social.svelte'
 import HeaderTop from '../../components/HeaderTop'
 
 export async function getStaticPaths() {
-    const posts = await getCollection('tips');
+    const posts = await getCollection("tips");
 
     return posts.map((post) => (
         {
